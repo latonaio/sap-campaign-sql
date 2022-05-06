@@ -17,6 +17,6 @@ CREATE TABLE `sap_campaign_collection_data`
 		   `ReferenceID`                                         varchar(35) DEFAULT NULL,
 		   `ReferenceBusinessSystemID`                           varchar(32) DEFAULT NULL,
 		   `EntityLastChangedOn`                                 varchar(80) DEFAULT NULL,
-    PRIMARY KEY (`CampaignID`),
+    PRIMARY KEY (`CampaignID`)
 ) ENGINE = InnoDB
  DEFAULT CHARSET = utf8mb4;
