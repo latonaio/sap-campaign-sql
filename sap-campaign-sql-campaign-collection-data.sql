@@ -1,9 +1,9 @@
-CREATE TABLE `sap_campaign_collection_data`
+CREATE TABLE `sap_campaign_campaign_collection_data`
 (
-		   `ObjectID`                                            varchar(10) DEFAULT NULL,
+		   `ObjectID`                                            varchar(10) NOT NULL,
+		   `CampaignID`                                          varchar(35) DEFAULT NULL,
 		   `CampaignType`                                        varchar(3) DEFAULT NULL,
 		   `CampaignTypeText`                                    varchar(80) DEFAULT NULL,
-		   `CampaignID`                                          varchar(35) NOT NULL,
 		   `CampaignName`                                        varchar(80) DEFAULT NULL,
 		   `EndDate`                                             varchar(80) DEFAULT NULL,
 		   `StartDate`                                           varchar(80) DEFAULT NULL,
@@ -17,6 +17,6 @@ CREATE TABLE `sap_campaign_collection_data`
 		   `ReferenceID`                                         varchar(35) DEFAULT NULL,
 		   `ReferenceBusinessSystemID`                           varchar(32) DEFAULT NULL,
 		   `EntityLastChangedOn`                                 varchar(80) DEFAULT NULL,
-    PRIMARY KEY (`CampaignID`)
+    PRIMARY KEY (`ObjectID`)
 ) ENGINE = InnoDB
  DEFAULT CHARSET = utf8mb4;
